@@ -154,18 +154,6 @@ h3.heading {
 .margin{
     margin: 75% 0;
 }
- #parallax-inner{
-    padding-top: 400%;
-    padding-bottom: 300%;
-
-}
-#parallax{
-    background: url(ako.jpg) repeat fixed 100% ;
-    background-position: top;
-    background-size: cover;
-} 
-
-
 
 .parallax{
     background: url(princesscastle.gif) repeat fixed 100%;
@@ -225,77 +213,187 @@ hr.socket{
 .home-inner{
     background: repeat fixed 100%;
 }
-#parallax p {
-    color:#49325d;
-    font-family:'Cambria', Georgia,Times, serif,sans-serif;
-    padding-top: 0%;
-    padding-bottom: 20%;
 
 
+
+ .body .landing {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100wh ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#parallax h1{
-    font-family: 'Pacifico', Georgia, Times, 'Times New Roman', serif,sans-serif;
-    font-size: 488%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-}
-
-.card{
-    position: relative; 
+.card {
+    position: relative;
     width: 300px;
-    height: 1000px;
-    background-position: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 400px;
+    
 }
-.card .face{
+ .card .face {
     position: absolute;
     width: 100%;
-    background-size: white;
+    height: 100%;
+    background-size: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+.card  .face1 {
+
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s ,.5s ,.5s ;
+    transition-duration: .5s, .0s, .5s;
+    z-index: 2;
+    transform: translate(-10px, -10px);
+
+}
+.card:hover  .face1 {
+    transition-property: transform, z-index,left;
+    transition-delay: 0s ,.5s ,.5s ;
+    transition-duration: .5s, .0s, .5s;
+    transform: translate(170px, -10px);
+    z-index: 1;
+    left: -160px;
+
+}
+.card  .face2 {
     
-}
-
-.card .face1 img{
-max-width: 1000px;    
-
-}
-
-.card  .face2{
-    position: absolute;
     background: #111;
-    width:  0 0rem ;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    background-position: top;
-    
-   
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s ,.5s ,.5s ;
+    transition-duration: .5s, .0s, .5s;
+    z-index: 1;
+}
+.card:hover  .face2 {
+    transition-property: transform, z-index,left;
+    transition-delay: 0s ,.5s ,.5s ;
+    transition-duration: .5s, .0s, .5s;
+    transform: translate(-160px, -10px);
+    z-index: 2;
+    left: 160px;
 
 }
-.card  .face2 .content{
-    padding: 100px;
-    background-color: red;
-    background-size: 1000px;
-    width: 150%;
-    height: 100%;
-    position: rela;
-   
-
+.card  .face1 img {
     
+background-position: bottom;
+max-width: 100%;
+}
+
+
+.card  .face2 .content{
+    padding:10px;
+    box-sizing: border-box;
+
 }
 .card  .face2 .content h2{
-    margin: 0;
+    margin: 10px 0 0;
     padding: 0;
-    color:#fff;
+    color: #fff;
 }
 
 .card  .face2 .content p{
-    margin: 0;
+    margin: 10px 0 0;
     padding: 0;
-    color:#fff;
+    color: #fff;
+}
+
+.home-inner p {
+    color: black;
+    text-align: center ;
+    text-shadow: .5rem .5rem .8rem black;
+    
+   
+}
+
+
+#parallax{
+    background: url(superrealgallery.png) repeat fixed 100%;
+
+    
+}
+#parallax-inner{
+    padding-top: 10%;
+    padding-bottom: 50%;
+    height : 800;
+}
+
+#parallax-inner #parallax .caption .text-center{
+    font-size: 4.8rem;
+    font-weight:700 ;
+    letter-spacing: .5rem;
+    text-shadow: .2rem .2rem .8rem black;
+    padding-bottom: 1.6rem;
+}
+
+#porfolio body .data-spy{
+     font: 16px Helvetica, Sans-Serif; 
+     line-height: 24px;
+     margin: 0; 
+     padding: 0;
+
+}
+
+#page-wrap { width: 800px; 
+    margin: 40px auto 60px; 
+}
+
+#pic { float: right; 
+    margin: -30px 0 0 0;
+ }
+
+.fn h1 { margin: 0 0 16px 0; 
+    padding: 0 0 16px 0; 
+    font-size: 42px; font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #999;
+ }
+
+ .clear h2 { 
+     font-size: 20px;
+     margin: 0 0 6px 0;
+      position: relative;
+}
+
+.clear h2 span {
+    position: absolute;
+    bottom: 0; right: 0;
+    font-style: italic; font-family: Georgia, Serif;
+    font-size: 16px; color: #999; 
+    font-weight: normal; }
+#objectives p { 
+    margin: 0 0 16px 0;
+ }
+
+ #contact-info a { 
+    color: #999; 
+    text-decoration: none;
+    border-bottom: 1px dotted #999; 
+    }
+#contact-info   a:hover {
+border-bottom-style: solid; 
+color: black;
+ }
+
+.clear ul { margin: 0 0 32px 17px;
+ }
+
+ #objective {
+      width: 500px;
+     float: left;
+     }
+#objective p {
+     font-family: Georgia, Serif; 
+    font-style: italic;
+     color: #666;
+     }
+#page-wrap img {
+    border-radius: 50%;
+
 }
